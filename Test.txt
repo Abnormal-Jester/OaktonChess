@@ -1,1 +1,10 @@
-Change Me - Finally!
+Workflow
+
+git pull
+
+git add test.txt
+git commit -m "did stuff"
+
+git pull
+
+git push
