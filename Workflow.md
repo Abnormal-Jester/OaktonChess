@@ -36,4 +36,5 @@
 - Open the folder using cd:
  - cd OaktonChess
  - You should now see a blue [master] next to the folder name
+- Tell Jarett your username (if you are not currently a collaborator)
 - Go to Git Workflow
