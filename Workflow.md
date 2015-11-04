@@ -1,13 +1,18 @@
-Git Workflow
+# Git Workflow
+
+## Regular Git Use
 
 1. git pull
--
- - git add test.txt
- - git commit -m "did stuff"
+- git add test.txt
+- git commit -m "did stuff"
 - git pull
 - git push
 
-Git Setup
+## Git Conflict
+
+1. Contact Jarett
+
+## Git Setup
 
 1. Sign up for https://github.com/
  - username
