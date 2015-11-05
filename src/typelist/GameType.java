@@ -2,9 +2,11 @@
 package typelist;
 
 /**
- * Created by Jarett on 10/21/2015.
- */
-
+* GameType Object.
+*
+* @author Jarett Lee
+* @version 0.0
+*/
 public enum GameType {
    NORMAL, GOD
 }
