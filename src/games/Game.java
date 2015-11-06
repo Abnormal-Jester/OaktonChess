@@ -10,6 +10,13 @@ package games;
 public class Game {
 
    public static void main(String[] args) {
+
+      // TODO field
+      // Black Player
+      // White Player
+      // Board
+      // ? List of players
+
    }
 
 }
