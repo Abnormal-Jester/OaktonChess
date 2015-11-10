@@ -10,11 +10,17 @@ public class BoardGUI extends Frame{
 
    // TODO constructor to setup the GUI components
    public BoardGUI () {
-
+      Frame frame = new Frame("This is the title");
+      frame.setBackground(Color.white);
+      frame.setLayout(null);
+      frame.setLocation(0,0);
+      frame.setSize(100,100);
+      frame.setVisible(true);
    }
 
    public static void main(String[] args) {
       // TODO create a new BoardGUI
+      BoardGUI();
    }
 
 }
