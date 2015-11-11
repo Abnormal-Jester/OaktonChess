@@ -7,9 +7,12 @@ import java.awt.Frame;
 @SuppressWarnings("serial")
 
 public class BoardGUI extends Frame{
+   // The object Frame should be declared here, in the field
 
    // TODO constructor to setup the GUI components
    public BoardGUI () {
+      // The local variable here terminates at the next squiggly bracket,
+      // it does no carry to the main method
       Frame frame = new Frame("This is the title");
       frame.setBackground(Color.white);
       frame.setLayout(null);
@@ -20,6 +23,8 @@ public class BoardGUI extends Frame{
 
    public static void main(String[] args) {
       // TODO create a new BoardGUI
+      // This doesn't create an instance of the board. I think you are trying to
+      // use it as a method, but then we can't change its instance variable.
       BoardGUI();
    }
 
