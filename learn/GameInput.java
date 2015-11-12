@@ -2,20 +2,30 @@ import java.util.Scanner;
 
 public class GameInput {
 
-   public static int readConsole() {
-      // TODO create a Scanner
+   public static String readConsole() {
+      Scanner console = new Scanner(System.in);
 
       // TODO verify the user input
+      String input = console.next();
 
       // TODO return an acceptable value
-      return 0;
+      return input;
+   }
+
+   public static String readSingleConsole() {
+      return "" + new Scanner(System.in).nextInt();
    }
 
    public static void main(String[] args) {
 
-      int x = readConsole();
+      System.out.print("Please input: ");
+      String x = readConsole();
 
-      System.out.println("The number you input was " + x);
+      System.out.println("The input you put in was: " + x);
+
+      System.out.print("Please input: ");
+      x = readSingleConsole();
+      System.out.println("readSingleConsole input: " + x);
 
    }
 
