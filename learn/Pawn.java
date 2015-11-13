@@ -1,3 +1,5 @@
+package learn;
+
 public class Pawn {
    // TODO field
 
