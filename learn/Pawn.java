@@ -1,6 +1,9 @@
-public class Pawn {
+public class Pawn extends ChessPiece 
+{
    // TODO field
-
+   private String color;
+   private boolean hasMoved;
+   
 
    // TODO constructor
    Pawn () {
