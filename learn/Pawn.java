@@ -60,5 +60,24 @@ public class Pawn extends ChessPiece
       Pawn black2 = new Pawn("black");
       System.out.println(black2);
       // current output
+      /*
+      White Pawn 1
+      Color: white
+      Location: (2, 1)
+      Moved: false
+      White Pawn 2
+      Color: white
+      Location: (2, 2)
+      Moved: false
+      Black Pawn 1
+      Color: black
+      Location: (7, 1)
+      Moved: false
+      Black Pawn 2
+      Color: black
+      Location: (7, 2)
+      Moved: false
+      */
+      
    }
 }
