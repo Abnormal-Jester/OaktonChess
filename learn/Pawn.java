@@ -1,23 +1,64 @@
-public class Pawn extends ChessPiece 
+public class Pawn extends ChessPiece
 {
-   // TODO field
    private String color;
    private boolean hasMoved;
+   private int column, row;
+   private static int whiteCounter = 0, blackCounter = 0;
+
+   Pawn (String color) 
+   {
+      this.color = color;
+      hasMoved = false;
+      if (color.equals("white")) // assumes bottom half of chess board is white
+      {
+         row = 2;
+         column = ++whiteCounter;
+      }
+      else
+      {
+         row = 7;
+         column = ++blackCounter;
+      }
+   }
    
-
-   // TODO constructor
-   Pawn () {
-
+   public String returnColor()
+   {
+      return color;
    }
-
+   
+   public boolean returnHasMoved()
+   {
+      return hasMoved;
+   }
+   
+   public int returnRow()
+   {
+      return row;
+   }
+   
+   public int returnColumn()
+   {
+      return column;
+   }
+   
    @Override
-   public String toString() {
-      // TODO give an output that gives testing information about the object
-      return "";
+   public String toString() 
+   {
+      return "Color: " + color +
+             "\nLocation: (" + row + ", " + column + ')' +
+             "\nMoved: " + hasMoved;
    }
 
-   public static void main(String[] args) {
-      // TODO test pawns
+   public static void main(String[] args) 
+   {
+      Pawn white1 = new Pawn("white");
+      System.out.println(white1);
+      Pawn white2 = new Pawn("white");
+      System.out.println(white2);
+      Pawn black1 = new Pawn("black");
+      System.out.println(black1);
+      Pawn black2 = new Pawn("black");
+      System.out.println(black2);
+      // current output
    }
-
 }
