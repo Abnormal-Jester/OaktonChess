@@ -16,7 +16,13 @@ public class BoardGUI extends Frame{
       frame.setBackground(Color.white);
       frame.setLayout(null);
       frame.setLocation(0,0);
-      frame.setSize(100,100);
+      frame.setSize(300,300);
+      TextField textfield = new TextField("String", 30);
+		textfield.setBackground(Color.gray);
+		textfield.setLocation(50, 125);
+		textfield.setSize(200, 50);
+		frame.add(textfield);
+		textfield.setVisible(true);
       frame.setVisible(true);
    }
 
